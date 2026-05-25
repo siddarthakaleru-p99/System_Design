@@ -6,7 +6,7 @@ def authenticate(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
 
-        is_authenticated = True
+        is_authenticated = args[0]
 
         if not is_authenticated:
             print("Access Denied: User not authenticated")
