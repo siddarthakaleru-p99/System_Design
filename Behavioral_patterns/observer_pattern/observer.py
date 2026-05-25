@@ -25,9 +25,6 @@ class YouTubeChannel:
     def subscribe(self, subscriber):
         self.subscribers.append(subscriber)
 
-    def unsubscribe(self, subscriber):
-        self.subscribers.remove(subscriber)
-
     def notify_subscribers(self, message):
 
         for subscriber in self.subscribers:

@@ -1,4 +1,4 @@
-from Behavioral_patterns.observer_pattern.observer import (
+from observer import (
     YouTubeChannel,
     UserSubscriber
 )
